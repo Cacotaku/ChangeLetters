@@ -47,7 +47,10 @@ while(optionUseProgram != 0):
         elif(name[I] == "á"):
             nameFixed = nameFixed + "a" 
 
-        elif(name[I] == "á"):
+        elif(name[I] == "à"):
+            nameFixed = nameFixed + "a"    
+
+        elif(name[I] == "ä"):
             nameFixed = nameFixed + "a"    
         
         elif(name[I] == "ê"):
@@ -56,7 +59,28 @@ while(optionUseProgram != 0):
         elif(name[I] == "é"):
             nameFixed = nameFixed + "e"
 
+        elif(name[I] == "è"):
+            nameFixed = nameFixed + "e"
+
+        elif(name[I] == "ë"):
+            nameFixed = nameFixed + "e"
+
+        elif(name[I] == "ì"):
+            nameFixed = nameFixed + "i"
+
+        elif(name[I] == "î"):
+            nameFixed = nameFixed + "i"
+
         elif(name[I] == "í"):
+            nameFixed = nameFixed + "i"
+
+        elif(name[I] == "ï"):
+            nameFixed = nameFixed + "i"
+
+        elif(name[I] == "ö"):
+            nameFixed = nameFixed + "o"
+
+        elif(name[I] == "ò"):
             nameFixed = nameFixed + "i"
         
         elif(name[I] == "ó"):
@@ -71,6 +95,15 @@ while(optionUseProgram != 0):
         elif(name[I] == "ú"):
             nameFixed = nameFixed + "u"
 
+        elif(name[I] == "ù"):
+            nameFixed = nameFixed + "u"
+
+        elif(name[I] == "û"):
+            nameFixed = nameFixed + "u"
+
+        elif(name[I] == "ü"):
+            nameFixed = nameFixed + "u"
+            
         elif(name[I] == "ç"):
             nameFixed = nameFixed + "c"
 
