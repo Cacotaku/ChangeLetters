@@ -77,4 +77,4 @@ The program runs in a loop until the user chooses to exit.
 This project is licensed under the MIT License. Feel free to use and modify it.
 
 👨‍💻 Author
-Developed by [Your Name]. Contributions are welcome!
+Developed by Paulo de Tarso. Contributions are welcome!
