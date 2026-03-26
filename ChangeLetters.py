@@ -10,10 +10,10 @@ def _apagarTela():
 #Variable verifying if you want to continue (0 - No)
 optionUseProgram = -1
 
-while(optionUseProgram != 0):
+while(True):
 
     #clean screen
-    _apagarTela()
+    #_apagarTela()
 
     #index
     I = 0
@@ -22,13 +22,13 @@ while(optionUseProgram != 0):
     optionChangeLetters = 0
        
     #Inserting name to fix
-    name = input("Digite o nome:\n")
+    name = input("Digite o nome: (Digite \"No\" para sair)\n")
 
-    #verifying witch option to change letters
-    optionChangeLetters = int(input("Deseja transformar o texto em: \n1 - Letras Maiúsculas \n2 - Letras Minúsculas\n")) 
+    if(name.lower() == "") or name.lower() == "no":
+        break
 
     #transform name into lower case
-    name = name.lower()
+    name = name.lower().strip()
 
     #defining names length
     nameLength = len(name)
@@ -47,10 +47,7 @@ while(optionUseProgram != 0):
         elif(name[I] == "á"):
             nameFixed = nameFixed + "a" 
 
-        elif(name[I] == "à"):
-            nameFixed = nameFixed + "a"    
-
-        elif(name[I] == "ä"):
+        elif(name[I] == "á"):
             nameFixed = nameFixed + "a"    
         
         elif(name[I] == "ê"):
@@ -59,28 +56,7 @@ while(optionUseProgram != 0):
         elif(name[I] == "é"):
             nameFixed = nameFixed + "e"
 
-        elif(name[I] == "è"):
-            nameFixed = nameFixed + "e"
-
-        elif(name[I] == "ë"):
-            nameFixed = nameFixed + "e"
-
-        elif(name[I] == "ì"):
-            nameFixed = nameFixed + "i"
-
-        elif(name[I] == "î"):
-            nameFixed = nameFixed + "i"
-
         elif(name[I] == "í"):
-            nameFixed = nameFixed + "i"
-
-        elif(name[I] == "ï"):
-            nameFixed = nameFixed + "i"
-
-        elif(name[I] == "ö"):
-            nameFixed = nameFixed + "o"
-
-        elif(name[I] == "ò"):
             nameFixed = nameFixed + "i"
         
         elif(name[I] == "ó"):
@@ -95,15 +71,6 @@ while(optionUseProgram != 0):
         elif(name[I] == "ú"):
             nameFixed = nameFixed + "u"
 
-        elif(name[I] == "ù"):
-            nameFixed = nameFixed + "u"
-
-        elif(name[I] == "û"):
-            nameFixed = nameFixed + "u"
-
-        elif(name[I] == "ü"):
-            nameFixed = nameFixed + "u"
-            
         elif(name[I] == "ç"):
             nameFixed = nameFixed + "c"
 
@@ -118,22 +85,14 @@ while(optionUseProgram != 0):
 
         I = I + 1
 
-    if(optionChangeLetters == 1):
-        #turning name into upper case
-        nameUpper = nameFixed.upper()    
+    nameUpper = nameFixed.upper()    
 
-        #print name
-        print(nameUpper)
+    #print name
+    print(nameUpper)
 
-    elif(optionChangeLetters == 2):
-        #turning name into lower case
-        nameLower = nameFixed.lower()
-
-        #print name
-        print(nameLower)
     
-    else:
-        print("Opção incorreta. Selecionar opção válida.")        
+    nameLower = nameFixed.lower()
 
-    #Verify if you want to continue
-    optionUseProgram = int(input("Deseja transformar outro nome?\nSim - 1 | Não - 0\n"))
+    #print name
+    print(nameLower)
+    
